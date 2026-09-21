@@ -1,6 +1,6 @@
-/* =========================
-   หน้าแรก
-========================= */
+/* =========================================================
+   GLOBAL / หน้าแรก
+========================================================= */
 
 .page {
   width: min(100% - 2rem, 70rem);
@@ -20,17 +20,24 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+
   margin: 0;
   padding: 12px 0;
+
   list-style: none;
 }
 
 .navLink {
   display: block;
+
   padding: 8px 18px;
+
   color: #006b3f;
+
   text-decoration: none;
+
   border-radius: 6px;
+
   transition: 0.2s;
 }
 
@@ -38,70 +45,91 @@
 .navLink:focus-visible {
   color: #ffffff;
   background: #2e7d32;
+
   text-decoration: none;
 }
 
-/* =========================
+
+/* =========================================================
    ชื่อเว็บไซต์
-========================= */
+========================================================= */
 
 .siteTitle {
   position: relative;
+
   margin-bottom: 20px;
   padding: 30px;
+
   color: white;
   background: #006b3f;
+
   border-radius: 12px;
   border-bottom: 5px solid #f2c94c;
+
   text-align: center;
+
   overflow: hidden;
 }
 
 .siteTitle::after {
   content: "";
+
   position: absolute;
+
   width: 90px;
   height: 90px;
+
   right: -25px;
   top: -25px;
+
   background: #f2c94c;
+
   border-radius: 50%;
 }
 
 .siteTitle p {
   margin: 0 0 5px;
+
   color: #f2c94c;
+
   font-size: 0.8rem;
   font-weight: bold;
+
   letter-spacing: 2px;
 }
 
 .siteTitle h1 {
   margin: 0;
+
   font-size: 2.2rem;
 }
 
 .siteTitle span {
   display: block;
+
   margin-top: 8px;
+
   color: #e8f5e9;
 }
 
 
-/* =========================
+/* =========================================================
    กล่องเนื้อหา
-========================= */
+========================================================= */
 
 .intro {
   margin-bottom: 20px;
   padding: 22px;
+
   background: #ffffff;
+
   border: 1px solid #d5e5d8;
   border-radius: 10px;
 }
 
 .intro h2 {
   margin-top: 0;
+
   color: #006b3f;
 }
 
@@ -110,26 +138,31 @@
 }
 
 
-/* =========================
+/* =========================================================
    ข้อมูลระบบ
-========================= */
+========================================================= */
 
 .infoBox {
   display: flex;
   gap: 15px;
+
   margin-top: 20px;
 }
 
 .infoItem {
   flex: 1;
+
   padding: 18px;
+
   background: #fffdf0;
+
   border: 1px solid #f2c94c;
   border-radius: 8px;
 }
 
 .infoItem h3 {
   margin-top: 0;
+
   color: #006b3f;
 }
 
@@ -138,9 +171,9 @@
 }
 
 
-/* =========================
+/* =========================================================
    หัวข้อ
-========================= */
+========================================================= */
 
 .sectionTitle {
   margin-bottom: 18px;
@@ -148,113 +181,108 @@
 
 .topicList {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 10px;
+
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .topicList li {
   padding: 12px 15px;
+
   color: #315c42;
   background: #e8f5e9;
+
   border-left: 4px solid #f2c94c;
   border-radius: 6px;
 }
 
 
-/* =========================
+/* =========================================================
    สถานะ
-========================= */
+========================================================= */
 
 .statusOpen {
   display: inline-block;
+
   padding: 5px 12px;
+
   color: #006b3f;
   background: #d9f2df;
+
   border-radius: 15px;
 }
 
 .statusClosed {
   display: inline-block;
+
   padding: 5px 12px;
+
   color: #8a6d00;
   background: #fff3b0;
+
   border-radius: 15px;
 }
 
 
-/* =========================
+/* =========================================================
    ส่วนท้ายหน้าแรก
-========================= */
+========================================================= */
 
 .aboutSection {
   border-left: 5px solid #f2c94c;
 }
 
 
-/* =========================
-   มือถือ
-========================= */
-
-@media (max-width: 600px) {
-
-  .page {
-    width: min(100% - 1rem, 70rem);
-    padding-block: 1.5rem;
-  }
-
-  .siteTitle {
-    padding: 25px 15px;
-  }
-
-  .siteTitle h1 {
-    font-size: 1.8rem;
-  }
-
-  .infoBox {
-    flex-direction: column;
-  }
-
-  .topicList {
-    grid-template-columns: 1fr;
-  }
-}
-/* =========================
-   หน้า About
-========================= */
+/* =========================================================
+   ABOUT
+========================================================= */
 
 .aboutBox {
   padding: 30px;
+
   background: #ffffff;
+
   border: 1px solid #d5e5d8;
   border-left: 5px solid #f2c94c;
+
   border-radius: 10px;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .aboutBox h1 {
   margin-top: 0;
   margin-bottom: 15px;
+
   color: #006b3f;
+
   font-size: 1.8rem;
 }
 
 .aboutBox p {
   margin: 0;
+
   color: #405548;
+
   line-height: 1.8;
 }
 
 
-/* =========================
-   หน้ารายวิชา
-========================= */
+/* =========================================================
+   COURSES
+========================================================= */
 
 .courses-page {
   width: min(100% - 2rem, 1200px);
+
   margin-inline: auto;
+
   padding-block: 2rem;
 }
 
@@ -263,54 +291,109 @@
   padding-bottom: 12px;
 
   color: #006b3f;
+
   font-size: 2rem;
+
   text-align: center;
 
   border-bottom: 3px solid #f2c94c;
 }
 
-/* =========================
-   เครื่องมือค้นหา
-========================= */
+
+/* =========================================================
+   Course Tools
+========================================================= */
 
 .course-tools {
   display: flex;
   align-items: center;
+
   gap: 15px;
 
   margin-bottom: 25px;
 }
 
-/* ช่องค้นหา */
+
+/* =========================================================
+   Course Search
+========================================================= */
 
 .course-search {
   position: relative;
+
   flex: 1;
 }
 
 .course-search input {
   width: 100%;
+
+  box-sizing: border-box;
+
   padding: 12px 16px;
 
-  font-size: 15px;
+  color: #405548;
+  background: #ffffff;
 
   border: 1px solid #d5e5d8;
   border-radius: 8px;
 
+  font-size: 15px;
+
   outline: none;
-  box-sizing: border-box;
 
   transition: 0.2s;
 }
 
 .course-search input:focus {
   border-color: #006b3f;
-  box-shadow: 0 0 0 3px rgba(0, 107, 63, 0.1);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 107, 63, 0.1);
 }
 
-/* =========================
-   จำนวนรายการโปรด
-========================= */
+
+/* =========================================================
+   Search Icon
+========================================================= */
+
+.search-icon {
+  position: absolute;
+
+  right: 14px;
+  top: 50%;
+
+  width: 12px;
+  height: 12px;
+
+  border: 2px solid #7a8f82;
+
+  border-radius: 50%;
+
+  transform: translateY(-60%);
+
+  pointer-events: none;
+}
+
+.search-icon::after {
+  content: "";
+
+  position: absolute;
+
+  width: 6px;
+  height: 2px;
+
+  right: -5px;
+  bottom: -3px;
+
+  background: #7a8f82;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   Course Favorite Count
+========================================================= */
 
 .course-favorite-count {
   padding: 10px 15px;
@@ -326,12 +409,14 @@
 
 .course-favorite-count strong {
   color: #006b3f;
+
   font-size: 18px;
 }
 
-/* =========================
-   ปุ่มรายการโปรด
-========================= */
+
+/* =========================================================
+   Favorite Filter
+========================================================= */
 
 .favorite-filter-btn {
   padding: 11px 16px;
@@ -352,6 +437,7 @@
 
 .favorite-filter-btn:hover {
   background: #e5b93f;
+
   transform: translateY(-1px);
 }
 
@@ -359,9 +445,10 @@
   transform: scale(0.97);
 }
 
-/* =========================
-   ตารางรายวิชา
-========================= */
+
+/* =========================================================
+   Course Grid
+========================================================= */
 
 .courses-page .course-grid {
   display: grid;
@@ -374,14 +461,20 @@
   padding: 0;
 
   background: transparent;
+
   border: none;
 }
 
-/* =========================
+
+/* =========================================================
    Course Card
-========================= */
+========================================================= */
 
 .courses-page .course-card {
+  display: flex;
+
+  flex-direction: column;
+
   padding: 22px;
 
   background: #ffffff;
@@ -391,7 +484,8 @@
 
   border-radius: 10px;
 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
 
   transition:
     transform 0.2s ease,
@@ -404,10 +498,14 @@
 
   border-top-color: #f2c94c;
 
-  box-shadow: 0 7px 18px rgba(0, 107, 63, 0.12);
+  box-shadow:
+    0 7px 18px rgba(0, 107, 63, 0.12);
 }
 
-/* ชื่อวิชา */
+
+/* =========================================================
+   Course Card Title
+========================================================= */
 
 .course-card h2 {
   margin: 0 0 15px;
@@ -417,7 +515,24 @@
   font-size: 1.3rem;
 }
 
-/* รายละเอียด */
+.course-card h2 a {
+  color: #006b3f;
+
+  text-decoration: none;
+
+  transition: 0.2s;
+}
+
+.course-card h2 a:hover {
+  color: #2e7d32;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   Course Card Information
+========================================================= */
 
 .course-card p {
   margin: 9px 0;
@@ -427,12 +542,15 @@
   line-height: 1.5;
 }
 
-/* =========================
-   สถานะเปิด / ปิด
-========================= */
+
+/* =========================================================
+   Course Status
+========================================================= */
 
 .course-card p:nth-of-type(3) {
   display: inline-block;
+
+  width: fit-content;
 
   margin-top: 10px;
   padding: 6px 12px;
@@ -445,14 +563,15 @@
   font-size: 14px;
 }
 
-/* =========================
-   ปุ่มรายการโปรดในการ์ด
-========================= */
+
+/* =========================================================
+   Course Card Buttons
+========================================================= */
 
 .course-card button {
   width: 100%;
 
-  margin-top: 15px;
+  margin-top: auto;
   padding: 10px 15px;
 
   color: #006b3f;
@@ -472,9 +591,9 @@
 .course-card button:hover {
   color: #ffffff;
   background: #006b3f;
-}
 
-/* ตอนเป็นรายการโปรด */
+  transform: translateY(-1px);
+}
 
 .course-card button[aria-pressed="true"] {
   color: #006b3f;
@@ -487,11 +606,260 @@
   background: #e5b93f;
 }
 
-/* =========================
-   Empty State
-========================= */
+
+/* =========================================================
+   COURSE FORM
+========================================================= */
+
+.course-form {
+  margin-top: 30px;
+
+  padding: 25px;
+
+  background: #ffffff;
+
+  border: 1px solid #d5e5d8;
+  border-top: 4px solid #006b3f;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================================
+   Course Form Header
+========================================================= */
+
+.course-form-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   Course Form Icon
+========================================================= */
+
+.course-form-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  background: #e8f5e9;
+
+  border-radius: 10px;
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   Course Form Title
+========================================================= */
+
+.course-form-title {
+  flex: 1;
+}
+
+.course-form-title h2 {
+  margin: 0 0 5px;
+
+  color: #006b3f;
+
+  font-size: 1.4rem;
+}
+
+.course-form-title p {
+  margin: 0;
+
+  color: #6b7d71;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   Course Form Grid
+========================================================= */
+
+.course-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   Course Form Field
+========================================================= */
+
+.course-form-field {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.course-form-field label {
+  color: #315c42;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   Course Form Input
+========================================================= */
+
+.course-form-field input {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 11px 14px;
+
+  color: #405548;
+  background: #ffffff;
+
+  border: 1px solid #d5e5d8;
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.course-form-field input:focus {
+  border-color: #006b3f;
+
+  box-shadow:
+    0 0 0 3px rgba(0, 107, 63, 0.1);
+}
+
+
+/* =========================================================
+   Course Form Error
+========================================================= */
+
+.course-form-error {
+  margin: 0;
+
+  color: #d32f2f;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+.course-form-field input[aria-invalid="true"] {
+  border-color: #d32f2f;
+
+  background: #fff8f8;
+}
+
+.course-form-field input[aria-invalid="true"]:focus {
+  border-color: #d32f2f;
+
+  box-shadow:
+    0 0 0 3px rgba(211, 47, 47, 0.1);
+}
+
+
+/* =========================================================
+   Course Form Actions
+========================================================= */
+
+.course-form-actions {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+
+/* =========================================================
+   Course Form Save
+========================================================= */
+
+.course-form-save {
+  padding: 10px 18px;
+
+  color: #ffffff;
+  background: #006b3f;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.course-form-save:hover {
+  background: #2e7d32;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   Course Form Cancel
+========================================================= */
+
+.course-form-cancel {
+  padding: 10px 18px;
+
+  color: #006b3f;
+  background: #f2c94c;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.course-form-cancel:hover {
+  background: #e5b93f;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   Course Empty
+========================================================= */
 
 .course-empty {
+  grid-column: 1 / -1;
+
   padding: 50px 20px;
 
   text-align: center;
@@ -499,6 +867,7 @@
   background: #ffffff;
 
   border: 1px dashed #b8cdbd;
+
   border-radius: 10px;
 }
 
@@ -520,214 +889,23 @@
   color: #666;
 }
 
-/* =========================
-   Tablet
-========================= */
 
-@media (max-width: 900px) {
-  .course-tools {
-    flex-wrap: wrap;
-  }
-
-  .course-search {
-    flex-basis: 100%;
-  }
-
-  .courses-page .course-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 600px) {
-  .courses-page {
-    width: min(100% - 1rem, 1200px);
-    padding-block: 1.5rem;
-  }
-
-  .courses-page > h1 {
-    font-size: 1.7rem;
-  }
-
-  .course-tools {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
-  }
-
-  .course-search {
-    width: 100%;
-  }
-
-  .course-favorite-count {
-    text-align: center;
-  }
-
-  .favorite-filter-btn {
-    width: 100%;
-  }
-
-  .courses-page .course-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .courses-page .course-card {
-    padding: 18px;
-  }
-}
-/* =========================
+/* =========================================================
    สมาชิกวง
-========================= */
+========================================================= */
 
 .member-list {
   list-style: none;
+
   padding: 0;
   margin: 0;
 }
 
 .member-item {
   display: flex;
+
   align-items: center;
-  gap: 12px;
-  margin-bottom: 10px;
-}
 
-.member-image {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgb(3, 8, 1);
-  flex-shrink: 0;
-}
-/* =========================
-   Favorite Bands
-========================= */
-
-.bands-page {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.bands-page h1 {
-  text-align: center;
-  margin-bottom: 25px;
-  color: #006b3f;
-}
-
-/* ช่องค้นหา */
-
-.bands-page input {
-  display: block;
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto 15px;
-  padding: 12px 16px;
-
-  font-size: 16px;
-
-  border: 1px solid #d5e5d8;
-  border-radius: 8px;
-
-  outline: none;
-  box-sizing: border-box;
-}
-
-.bands-page input:focus {
-  border-color: #006b3f;
-}
-
-/* จำนวนวงที่ติดตาม */
-
-.bands-page > p {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #405548;
-}
-
-/* Grid */
-
-.band-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-/* Card */
-
-.band-card {
-  overflow: hidden;
-
-  background: #ffffff;
-
-  border: 1px solid #d5e5d8;
-  border-top: 4px solid #006b3f;
-  border-radius: 12px;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-
-  transition: 0.2s;
-}
-
-.band-card:hover {
-  transform: translateY(-4px);
-
-  border-top-color: #f2c94c;
-
-  box-shadow: 0 6px 16px rgba(0, 107, 63, 0.15);
-}
-
-/* รูปวง */
-
-.band-image {
-  width: 100%;
-  height: 220px;
-
-  object-fit: cover;
-}
-
-/* เนื้อหา */
-
-.band-content {
-  padding: 20px;
-}
-
-.band-content h2 {
-  margin-top: 0;
-  margin-bottom: 10px;
-
-  color: #006b3f;
-}
-
-.band-content p {
-  color: #405548;
-  line-height: 1.6;
-}
-
-/* สมาชิก */
-
-.band-content h3 {
-  margin-top: 20px;
-  margin-bottom: 12px;
-
-  color: #006b3f;
-}
-
-.member-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
-}
-
-.member-item {
-  display: flex;
-  align-items: center;
   gap: 12px;
 
   margin-bottom: 10px;
@@ -746,7 +924,181 @@
   flex-shrink: 0;
 }
 
-/* ปุ่ม */
+
+/* =========================================================
+   FAVORITE BANDS
+========================================================= */
+
+.bands-page {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 40px 20px;
+}
+
+.bands-page h1 {
+  margin-bottom: 25px;
+
+  color: #006b3f;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   Band Search
+========================================================= */
+
+.bands-page input {
+  display: block;
+
+  width: 100%;
+  max-width: 500px;
+
+  margin: 0 auto 15px;
+
+  padding: 12px 16px;
+
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  border: 1px solid #d5e5d8;
+
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.bands-page input:focus {
+  border-color: #006b3f;
+}
+
+
+/* =========================================================
+   จำนวนวงที่ติดตาม
+========================================================= */
+
+.bands-page > p {
+  margin-bottom: 30px;
+
+  color: #405548;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   Band Grid
+========================================================= */
+
+.band-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   Band Card
+========================================================= */
+
+.band-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid #d5e5d8;
+
+  border-top: 4px solid #006b3f;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.2s;
+}
+
+.band-card:hover {
+  transform: translateY(-4px);
+
+  border-top-color: #f2c94c;
+
+  box-shadow:
+    0 6px 16px rgba(0, 107, 63, 0.15);
+}
+
+
+/* =========================================================
+   Band Image
+========================================================= */
+
+.band-image {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+}
+
+
+/* =========================================================
+   Band Content
+========================================================= */
+
+.band-content {
+  padding: 20px;
+}
+
+.band-content h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  color: #006b3f;
+}
+
+.band-content p {
+  color: #405548;
+
+  line-height: 1.6;
+}
+
+.band-content h3 {
+  margin-top: 20px;
+  margin-bottom: 12px;
+
+  color: #006b3f;
+}
+
+
+/* =========================================================
+   Band Member
+========================================================= */
+
+.band-content .member-list {
+  list-style: none;
+
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.band-content .member-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   Band Buttons
+========================================================= */
 
 .band-content button {
   padding: 9px 15px;
@@ -754,6 +1106,7 @@
   margin-right: 8px;
 
   border: none;
+
   border-radius: 7px;
 
   color: white;
@@ -768,13 +1121,18 @@
 
 .band-content button:hover {
   background: #2e7d32;
+
   transform: translateY(-1px);
 }
 
-/* ปุ่ม Like */
+
+/* =========================================================
+   Like Button
+========================================================= */
 
 .band-content button:nth-of-type(2) {
   color: #006b3f;
+
   background: #f2c94c;
 }
 
@@ -782,88 +1140,59 @@
   background: #e5b93f;
 }
 
-/* จำนวน Like */
 
-.band-content button + button + p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-/* Empty State */
+/* =========================================================
+   Band Empty State
+========================================================= */
 
 .band-grid > p {
   grid-column: 1 / -1;
 
   padding: 40px 20px;
 
-  text-align: center;
-
   color: #666;
 
   background: #ffffff;
 
   border: 1px dashed #aaa;
+
   border-radius: 10px;
+
+  text-align: center;
 }
 
-/* =========================
-   Tablet
-========================= */
 
-@media (max-width: 900px) {
-  .band-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 600px) {
-  .bands-page {
-    padding: 25px 15px;
-  }
-
-  .bands-page h1 {
-    font-size: 26px;
-  }
-
-  .band-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .band-image {
-    height: 200px;
-  }
-
-  .band-content {
-    padding: 18px;
-  }
-}
-/* =========================
-   Game Backlog
-========================= */
+/* =========================================================
+   GAME BACKLOG
+========================================================= */
 
 .games-page {
   width: min(100% - 2rem, 1200px);
+
   margin-inline: auto;
+
   padding-block: 2rem;
 }
 
-/* หัวข้อ */
 .games-page > h1 {
   margin: 0 0 10px;
+
   padding-bottom: 12px;
+
   color: #006b3f;
+
   font-size: 2rem;
+
   text-align: center;
+
   border-bottom: 3px solid #f2c94c;
 }
 
 .games-page > p {
   margin: 8px 0;
+
   color: #405548;
+
   text-align: center;
 }
 
@@ -871,39 +1200,50 @@
   color: #006b3f;
 }
 
-/* เส้นแบ่ง */
 .games-page hr {
   margin: 30px 0;
+
   border: 0;
+
   border-top: 1px solid #d5e5d8;
 }
 
 
-/* =========================
-   Form
-========================= */
+/* =========================================================
+   Game Form
+========================================================= */
 
 .game-form {
   max-width: 700px;
+
   margin: 25px auto;
+
   padding: 25px;
+
   background: #ffffff;
+
   border: 1px solid #d5e5d8;
+
   border-top: 4px solid #006b3f;
+
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 .game-form h2 {
   margin: 0 0 20px;
+
   color: #006b3f;
+
   font-size: 1.4rem;
 }
 
 
-/* =========================
-   Form Group
-========================= */
+/* =========================================================
+   Game Form Group
+========================================================= */
 
 .form-group {
   margin-bottom: 16px;
@@ -911,24 +1251,31 @@
 
 .form-group label {
   display: block;
+
   margin-bottom: 7px;
+
   color: #315c42;
+
   font-weight: 600;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: 11px 14px;
+
   box-sizing: border-box;
+
+  padding: 11px 14px;
 
   color: #405548;
   background: #ffffff;
 
   border: 1px solid #d5e5d8;
+
   border-radius: 7px;
 
   font-size: 15px;
+
   outline: none;
 
   transition: 0.2s;
@@ -937,28 +1284,34 @@
 .form-group input:focus,
 .form-group select:focus {
   border-color: #006b3f;
-  box-shadow: 0 0 0 3px rgba(0, 107, 63, 0.1);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 107, 63, 0.1);
 }
 
 
-/* =========================
-   Validation Error
-========================= */
+/* =========================================================
+   Game Validation Error
+========================================================= */
 
 .error-message {
   margin: 6px 0 0;
+
   color: #d32f2f;
+
   font-size: 14px;
 }
 
 
-/* =========================
-   ปุ่ม Form
-========================= */
+/* =========================================================
+   Game Form Buttons
+========================================================= */
 
 .button-group {
   display: flex;
+
   gap: 10px;
+
   margin-top: 20px;
 }
 
@@ -969,22 +1322,27 @@
   background: #006b3f;
 
   border: none;
+
   border-radius: 7px;
 
   font-size: 14px;
+
   font-weight: 600;
 
   cursor: pointer;
+
   transition: 0.2s;
 }
 
 .game-form button:hover {
   background: #2e7d32;
+
   transform: translateY(-1px);
 }
 
 .game-form .cancel-button {
   color: #006b3f;
+
   background: #f2c94c;
 }
 
@@ -993,31 +1351,37 @@
 }
 
 
-/* =========================
-   Search & Filter
-========================= */
+/* =========================================================
+   Game Search
+========================================================= */
 
 .search-box {
   display: grid;
+
   grid-template-columns: 1fr 220px;
 
   gap: 12px;
+
   margin-bottom: 25px;
 }
 
 .search-box input,
 .search-box select {
   width: 100%;
-  padding: 12px 15px;
+
   box-sizing: border-box;
+
+  padding: 12px 15px;
 
   color: #405548;
   background: #ffffff;
 
   border: 1px solid #d5e5d8;
+
   border-radius: 8px;
 
   font-size: 15px;
+
   outline: none;
 
   transition: 0.2s;
@@ -1026,24 +1390,28 @@
 .search-box input:focus,
 .search-box select:focus {
   border-color: #006b3f;
-  box-shadow: 0 0 0 3px rgba(0, 107, 63, 0.1);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 107, 63, 0.1);
 }
 
 
-/* =========================
+/* =========================================================
    Game List
-========================= */
+========================================================= */
 
 .game-list {
   display: grid;
+
   grid-template-columns: repeat(2, 1fr);
+
   gap: 20px;
 }
 
 
-/* =========================
+/* =========================================================
    Game Card
-========================= */
+========================================================= */
 
 .game-card {
   padding: 22px;
@@ -1051,10 +1419,13 @@
   background: #ffffff;
 
   border: 1px solid #d5e5d8;
+
   border-top: 4px solid #006b3f;
+
   border-radius: 10px;
 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
 
   transition:
     transform 0.2s ease,
@@ -1067,7 +1438,8 @@
 
   border-top-color: #f2c94c;
 
-  box-shadow: 0 7px 18px rgba(0, 107, 63, 0.12);
+  box-shadow:
+    0 7px 18px rgba(0, 107, 63, 0.12);
 }
 
 .game-card h3 {
@@ -1087,23 +1459,28 @@
 }
 
 
-/* =========================
-   Status
-========================= */
+/* =========================================================
+   Game Status
+========================================================= */
 
 .game-status {
   width: 100%;
 
   margin: 8px 0 16px;
+
   padding: 10px 12px;
+
+  box-sizing: border-box;
 
   color: #405548;
   background: #ffffff;
 
   border: 1px solid #d5e5d8;
+
   border-radius: 7px;
 
   font-size: 14px;
+
   outline: none;
 }
 
@@ -1112,14 +1489,17 @@
 }
 
 
-/* =========================
+/* =========================================================
    Game Actions
-========================= */
+========================================================= */
 
 .game-actions {
   display: flex;
+
   flex-wrap: wrap;
+
   align-items: center;
+
   gap: 8px;
 }
 
@@ -1130,9 +1510,11 @@
   background: #006b3f;
 
   border: none;
+
   border-radius: 7px;
 
   font-size: 14px;
+
   cursor: pointer;
 
   transition: 0.2s;
@@ -1140,13 +1522,14 @@
 
 .game-actions button:hover {
   background: #2e7d32;
+
   transform: translateY(-1px);
 }
 
 
-/* =========================
-   Detail Button
-========================= */
+/* =========================================================
+   Game Link
+========================================================= */
 
 .game-link {
   display: inline-block;
@@ -1157,9 +1540,11 @@
   background: #e8f5e9;
 
   border: 1px solid #006b3f;
+
   border-radius: 7px;
 
   font-size: 14px;
+
   text-decoration: none;
 
   transition: 0.2s;
@@ -1167,13 +1552,14 @@
 
 .game-link:hover {
   color: #ffffff;
+
   background: #006b3f;
 }
 
 
-/* =========================
+/* =========================================================
    Delete Button
-========================= */
+========================================================= */
 
 .game-actions .delete-button {
   background: #c62828;
@@ -1184,20 +1570,23 @@
 }
 
 
-/* =========================
+/* =========================================================
    Delete Confirmation
-========================= */
+========================================================= */
 
 .delete-confirm {
   max-width: 600px;
 
   margin: 25px auto;
+
   padding: 20px;
 
   background: #fffdf0;
 
   border: 1px solid #f2c94c;
+
   border-left: 5px solid #f2c94c;
+
   border-radius: 10px;
 }
 
@@ -1205,6 +1594,7 @@
   margin: 0 0 15px;
 
   color: #405548;
+
   font-weight: 600;
 }
 
@@ -1212,9 +1602,11 @@
   padding: 9px 15px;
 
   border: none;
+
   border-radius: 7px;
 
   cursor: pointer;
+
   font-size: 14px;
 }
 
@@ -1222,6 +1614,7 @@
   margin-right: 8px;
 
   color: #ffffff;
+
   background: #c62828;
 }
 
@@ -1231,31 +1624,39 @@
 
 .delete-confirm button:last-child {
   color: #006b3f;
+
   background: #e8f5e9;
 }
 
 
-/* =========================
+/* =========================================================
    Game Detail
-========================= */
+========================================================= */
 
 .game-detail {
   width: min(100% - 2rem, 700px);
 
   margin: 40px auto;
+
   padding: 30px;
+
+  box-sizing: border-box;
 
   background: #ffffff;
 
   border: 1px solid #d5e5d8;
+
   border-top: 5px solid #006b3f;
+
   border-radius: 10px;
 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    0 3px 10px rgba(0, 0, 0, 0.07);
 }
 
 .game-detail h1 {
   margin-top: 0;
+
   margin-bottom: 20px;
 
   color: #006b3f;
@@ -1269,16 +1670,23 @@
   line-height: 1.6;
 }
 
+
+/* =========================================================
+   Back Link
+========================================================= */
+
 .back-link {
   display: inline-block;
 
   margin-top: 20px;
+
   padding: 9px 15px;
 
   color: #006b3f;
   background: #e8f5e9;
 
   border: 1px solid #006b3f;
+
   border-radius: 7px;
 
   text-decoration: none;
@@ -1288,18 +1696,39 @@
 
 .back-link:hover {
   color: #ffffff;
+
   background: #006b3f;
 }
 
 
-/* =========================
-   Tablet
-========================= */
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
 
 @media (max-width: 900px) {
 
+  .course-tools {
+    flex-wrap: wrap;
+  }
+
+  .course-search {
+    flex-basis: 100%;
+  }
+
+  .courses-page .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .course-form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .band-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .game-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .search-box {
@@ -1308,14 +1737,133 @@
 }
 
 
-/* =========================
-   Mobile
-========================= */
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
 
 @media (max-width: 600px) {
 
+  /* ---------- หน้าแรก ---------- */
+
+  .page {
+    width: min(100% - 1rem, 70rem);
+
+    padding-block: 1.5rem;
+  }
+
+  .siteTitle {
+    padding: 25px 15px;
+  }
+
+  .siteTitle h1 {
+    font-size: 1.8rem;
+  }
+
+  .infoBox {
+    flex-direction: column;
+  }
+
+  .topicList {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* ---------- Courses ---------- */
+
+  .courses-page {
+    width: min(100% - 1rem, 1200px);
+
+    padding-block: 1.5rem;
+  }
+
+  .courses-page > h1 {
+    font-size: 1.7rem;
+  }
+
+  .course-tools {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 10px;
+  }
+
+  .course-search {
+    width: 100%;
+  }
+
+  .course-favorite-count {
+    text-align: center;
+  }
+
+  .favorite-filter-btn {
+    width: 100%;
+  }
+
+  .courses-page .course-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .courses-page .course-card {
+    padding: 18px;
+  }
+
+  .course-form {
+    padding: 18px;
+  }
+
+  .course-form-header {
+    align-items: flex-start;
+  }
+
+  .course-form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .course-form-actions {
+    flex-direction: column;
+  }
+
+  .course-form-save,
+  .course-form-cancel {
+    width: 100%;
+  }
+
+
+  /* ---------- Bands ---------- */
+
+  .bands-page {
+    padding: 25px 15px;
+  }
+
+  .bands-page h1 {
+    font-size: 26px;
+  }
+
+  .band-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .band-image {
+    height: 200px;
+  }
+
+  .band-content {
+    padding: 18px;
+  }
+
+
+  /* ---------- Games ---------- */
+
   .games-page {
     width: min(100% - 1rem, 1200px);
+
     padding-block: 1.5rem;
   }
 
@@ -1333,6 +1881,7 @@
 
   .game-list {
     grid-template-columns: 1fr;
+
     gap: 15px;
   }
 
@@ -1350,19 +1899,24 @@
 
   .game-actions {
     flex-direction: column;
+
     align-items: stretch;
   }
 
   .game-actions button,
   .game-link {
     width: 100%;
+
     box-sizing: border-box;
+
     text-align: center;
   }
 
   .game-detail {
     width: min(100% - 1rem, 700px);
+
     padding: 20px;
+
     box-sizing: border-box;
   }
 }
