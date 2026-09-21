@@ -23,6 +23,11 @@ export default function Navbar() {
             ศิลปิน
           </Link>
         </li>
+        <li>
+          <Link className="navLink" href="/games">
+            เกมส์
+          </Link>
+        </li>
       </ul>
     </nav>
   );
