@@ -1,23 +1,32 @@
 import type { Course } from "@/types/course";
+import Link from "next/link";
 
 type CourseCardProps = {
   course: Course;
   isFavorite: boolean;
-  onToggleFavorite: (id: number) => void;
+  onToggleFavorite: (id: string) => void;
+  onEdit: () => void;
+  onDelete: () => void;
 };
 
 export default function CourseCard({
   course,
   isFavorite,
   onToggleFavorite,
+  onEdit,
+  onDelete
 }: CourseCardProps) {
   return (
     <article className="course-card">
-      <h2>{course.title}</h2>
+      <h2>
+        <Link href={`/courses/${course.id}`}>
+          {course.name}
+        </Link>
+      </h2>
 
       <p>รหัสวิชา: {course.code}</p>
 
-      <p>{course.credits} หน่วยกิต</p>
+      <p>{course.credit} หน่วยกิต</p>
 
       <p>
         {course.isOpen
@@ -34,6 +43,8 @@ export default function CourseCard({
           ? "อยู่ในรายการโปรด"
           : "เพิ่มเป็นรายการโปรด"}
       </button>
+      <button type="button" onClick={onEdit}>แก้ไข</button>
+      <button type="button" onClick={onDelete}>ลบ</button>
     </article>
   );
 }
